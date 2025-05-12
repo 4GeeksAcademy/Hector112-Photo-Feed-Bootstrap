@@ -9,17 +9,14 @@
     <title>Instagram bootstrap</title>
 </head>
 <body>
-    <!-- Encabezado -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <!-- INSTAGRAM -->
-            <a class="navbar-brand" href="#">
+    
+    <nav class="navbar navbar-expand-lg bg-light p-3 shadow-sm"> <!-- Encabezado -->
+        <div class="container-fluid">           
+            <a class="navbar-brand me-auto" href="#"> <!-- INSTAGRAM -->
                 <i class="fab fa-instagram"></i>  Instagram
-            </a>
-            <!-- botones publicacion y ajustes -->
-            <ul class="navbar-nav">
-                <!-- crear post -->
-                <li class="nav-item"> 
+            </a>            
+            <div class="d-flex align-items-center gap-3"> <!-- botones publicacion y ajustes -->
+                <div class="nav-item">  <!-- crear post -->
                     <form class="container-fluid justify-content-end">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nuevapublicacion">
                             Nueva Publicación
@@ -49,28 +46,25 @@
                             </div>
                           </div>
                     </form>
-                </li>
-                <!-- boton ajustes -->
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-cog"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
-                                <li><a class="dropdown-item" href="#">Datos y Privacidad</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-danger" href="#" >Desconectar</a></li>
-                            </ul>
-                    </div>
-                </li>
-            </ul>
+                </div>                
+        
+                <div class="dropdown"><!-- boton ajustes -->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="#">Datos y Privacidad</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#" >Desconectar</a></li>
+                    </ul>
+                </div>                
+            </div>
         </div>
     </nav>
 
     <!--botones para cambiar tipos de fotos-->
-    
     <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#multiphoto-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fas fa-th"></i></button>
