@@ -13,13 +13,15 @@
     <nav class="navbar navbar-expand-lg bg-light p-3 shadow-sm"> <!-- Encabezado -->
         <div class="container-fluid">           
             <a class="navbar-brand me-auto" href="#"> <!-- INSTAGRAM -->
-                <i class="fab fa-instagram"></i>  Instagram
+                <i class="fab fa-instagram"></i>
+                <span class="d-none d-sm-inline">Instagram</span>
             </a>            
-            <div class="d-flex align-items-center gap-3"> <!-- botones publicacion y ajustes -->
+            <div class="d-flex align-items-center gap-1 gap-md-3"> <!-- botones publicacion y ajustes -->
                 <div class="nav-item">  <!-- crear post -->
                     <form class="container-fluid justify-content-end">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nuevapublicacion">
-                            Nueva Publicación
+                            <span class="d-none d-md-inline">Nueva Publicación</span>
+                            <i class="fas fa-plus d-md-none"></i>
                         </button>
                         <div class="modal fade" id="nuevapublicacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -49,7 +51,7 @@
                 </div>                
         
                 <div class="dropdown"><!-- boton ajustes -->
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                       <i class="fas fa-cog"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -77,59 +79,60 @@
         <div class="tab-content" id="myTabContent">
             <!-- vista fotos de a 3 -->
             <div class="tab-pane fade show active " id="multiphoto-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="row justify-content-evenly" style="margin-left: 10px; margin-right: 10px;">
+               <div class="container-fluid px-0">
+                <div class="row g-0">
                 <!-- F1 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F2 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F3 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F4 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F5 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F6 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F7 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F8 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 <!-- F9 -->
-                    <div class="col-4" style="margin-top: 10px; margin-bottom: 10px;">                        
-                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="img-scuare" style="width: 100%;" alt="...">
+                    <div class="col-4" >                        
+                        <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="w-100 p-1" style="aspect-ratio: 1/1; object-fit: covoer;" alt="...">
                     </div>
                 </div>
+                </div>
             </div>
-
             <!-- vista fotos individuales -->
             <div class="tab-pane justify-content-center" id="bigphoto-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <!-- foto 1 -->
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 70%; margin-top: 50px; margin-bottom: 50px;">
-                        <div class="card-header d-flex">
+                <div class="row justify-content-center my-4">
+                    <div class="card col-9 shadow-sm">
+                        <div class="card-header d-flex ">
                             <div class="p-2 w-100"><h1>Titulo</h1></div>
                             <div class="p-2 flex-shrink-1"><a>fecha</a></div>
                         </div>
-                            <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="card-img-top" alt="...">
+                            <img src="https://wallpapers.com/images/hd/country-summer-tree-grassland-sunset-95sc5d9zwgblc4pt.jpg" class="card-img-top" style="max-height: 500px; object-fit: cover;" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">204 likes</h5>
-                            <p class="card-text">comentario de la foto</p>
+                            <p class="card-text">comentario de la foto</p>                            
                         </div>
                     </div>
                 </div>
